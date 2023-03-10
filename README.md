@@ -2,10 +2,10 @@
 
 **About the project:** User can perform CRUD operations (create, read, update and delete), when planning trips.
 
-User can view all your travels.
+User can view all his travels.
 ![img.png](img/img1.png)
 
-User can create a new trip
+User can create a new trip.
 
 ![img.png](img/img2.png)
 
