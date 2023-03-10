@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2023-03-09--create-table-journey"
+               id="2023-03-09--create-table-journey" author="s.mitskevich">
+        <createTable tableName="journey">
+            <column name="id" type="serial">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(64)"/>
+            <column name="country" type="varchar(64)"/>
+            <column name="state_or_province" type="varchar(64)"/>
+            <column name="city" type="varchar(64)"/>
+            <column name="postal_code" type="varchar(64)"/>
+            <column name="date_start_of_journey" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_end_of_journey" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(256)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

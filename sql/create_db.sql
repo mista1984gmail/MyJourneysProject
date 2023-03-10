@@ -1,0 +1,1 @@
+create database journey_db;
